@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push Code to Git</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>How to Push Code to Git</h1>
+        <div class="step" onclick="toggleStep(this)">
+            <h3>Step 1: Initialize a Git Repository</h3>
+            <p>Initialize a new Git repository in your project folder.</p>
+            <pre><code>git init</code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="step" onclick="toggleStep(this)">
+            <h3>Step 2: Add Files to Staging</h3>
+            <p>Add all files to the staging area to prepare for commit.</p>
+            <pre><code>git add .</code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="step" onclick="toggleStep(this)">
+            <h3>Step 3: Commit Changes</h3>
+            <p>Commit the staged files with a descriptive message.</p>
+            <pre><code>git commit -m "Initial commit"</code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="step" onclick="toggleStep(this)">
+            <h3>Step 4: Add Remote Repository</h3>
+            <p>Link your local repository to a remote repository (e.g., GitHub).</p>
+            <pre><code>git remote add origin &lt;repository-url&gt;</code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="step" onclick="toggleStep(this)">
+            <h3>Step 5: Push to Remote</h3>
+            <p>Push your committed changes to the remote repository.</p>
+            <pre><code>git push -u origin main</code></pre>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
